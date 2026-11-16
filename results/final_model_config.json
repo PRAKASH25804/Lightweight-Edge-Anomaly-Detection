@@ -1,0 +1,73 @@
+{
+    "project_title": "Development of Lightweight Neural Network Architecture for Real-Time Anomaly Detection on Resource-Constrained Edge Devices",
+    "dataset": "Edge-IIoTset (ML-EdgeIIoT-dataset)",
+    "task": "Binary Anomaly Detection (Normal=0, Anomaly=1)",
+    "selected_architecture": "Arch_A_32_16",
+    "hidden_layers": [
+        32,
+        16
+    ],
+    "input_features_count": 30,
+    "selected_features": [
+        "tcp.dstport",
+        "tcp.srcport",
+        "tcp.seq",
+        "tcp.flags",
+        "mqtt.hdrflags",
+        "mqtt.msgtype",
+        "tcp.ack",
+        "mqtt.len",
+        "tcp.len",
+        "tcp.connection.rst",
+        "tcp.flags.ack",
+        "mqtt.topic_len",
+        "mqtt.proto_len",
+        "tcp.ack_raw",
+        "mqtt.topic",
+        "mqtt.protoname",
+        "mqtt.conflag.cleansess",
+        "mqtt.conflags",
+        "http.response",
+        "tcp.connection.fin",
+        "mqtt.ver",
+        "tcp.checksum",
+        "tcp.connection.syn",
+        "tcp.connection.synack",
+        "http.request.version",
+        "icmp.seq_le",
+        "icmp.checksum",
+        "udp.stream",
+        "http.request.method",
+        "udp.port"
+    ],
+    "decision_threshold": 0.5,
+    "quantization": "FP32",
+    "pruning_sparsity": 0.0,
+    "final_model_artifact": "models/proposed_lightweight_model.pt",
+    "test_metrics": {
+        "accuracy": 0.99091,
+        "precision": 0.99712,
+        "recall": 0.99211,
+        "f1": 0.99461,
+        "roc_auc": 0.99762,
+        "pr_auc": 0.99952,
+        "fpr": 0.01564,
+        "confusion_matrix": {
+            "tn": 3588,
+            "fp": 57,
+            "fn": 157,
+            "tp": 19746
+        }
+    },
+    "hardware_metrics": {
+        "parameters": 1537,
+        "model_size_kb": 9.37,
+        "avg_latency_ms": 0.0863,
+        "median_latency_ms": 0.0826,
+        "p95_latency_ms": 0.1034,
+        "throughput_samples_per_sec": 12304.7,
+        "ram_mb": 461.26,
+        "cpu_percent": 0.0
+    },
+    "efficiency_score": 0.8276
+}

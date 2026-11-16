@@ -1,0 +1,34 @@
+{
+    "dataset_name": "Edge-IIoTset (ML-EdgeIIoT-dataset)",
+    "total_rows": 157800,
+    "total_columns": 63,
+    "duplicate_rows": 814,
+    "missing_values": 0,
+    "categorical_columns_count": 0,
+    "numerical_columns_count": 63,
+    "target_binary_distribution": {
+        "Normal (0)": 24301,
+        "Anomaly (1)": 133499
+    },
+    "target_anomaly_percentage": 84.60012674271229,
+    "target_normal_percentage": 15.399873257287705,
+    "imbalance_ratio_anomaly_to_normal": 5.49,
+    "attack_types_count": 15,
+    "attack_types_distribution": {
+        "Normal": 24301,
+        "DDoS_UDP": 14498,
+        "DDoS_ICMP": 14090,
+        "Ransomware": 10925,
+        "DDoS_HTTP": 10561,
+        "SQL_injection": 10311,
+        "Uploading": 10269,
+        "DDoS_TCP": 10247,
+        "Backdoor": 10195,
+        "Vulnerability_scanner": 10076,
+        "Port_Scanning": 10071,
+        "XSS": 10052,
+        "Password": 9989,
+        "MITM": 1214,
+        "Fingerprinting": 1001
+    }
+}

@@ -1,0 +1,4 @@
+Target_Sparsity,Actual_Sparsity_%,Total_Weights,Zero_Weights,Active_Weights,Model_Size_KB,Accuracy,Precision,Recall,F1_Score,ROC_AUC,Avg_Latency_ms,P95_Latency_ms,Throughput
+25%,25.0,1488,372,1116,9.34,0.99159,0.99567,0.99437,0.99502,0.99802,0.0843,0.0949,12006.7
+50%,50.0,1488,744,744,9.34,0.97872,0.98197,0.99307,0.98748,0.99566,0.0846,0.0969,12055.3
+75%,75.0,1488,1116,372,9.34,0.9129,0.91601,0.98749,0.95041,0.93786,0.0846,0.1053,12418.7
